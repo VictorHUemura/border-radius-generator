@@ -4,35 +4,25 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Border Radious Previewer</title>
+     <title>Binary Converter</title>
      <link rel="stylesheet" href="style.css">
-     <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-circle-outline-512.png" type="image/x-icon">
 </head>
 <body>
-     <div class="content">
-          <div class="title">
-               <h1>Border Radious Previewer</h1>
-          </div>
-          <hr color="#3D3D3D">
-          <div class="values">
-               <div class="values1">
-                    <input type="number" id="input1" min="0">
-                    <input type="number" id="input2" min="0">
+     <main>
+          <section>
+               <div class="title">
+                    <img src="https://media.tenor.com/3ZmJ03P95FwAAAAC/hid-code.gif" alt="binary number in moviment" class="imageBinary">
+                    <h1>Convert binary to decimal</h1>
                </div>
-               <div class="previewer" id="previewer"></div>
-               <div class="values2">
-                    <input type="number" id="input3" min="0">
-                    <input type="number" id="input4" min="0">
+               <div class="digiteAndResult">
+                    <input type="text" id="bin" placeholder="insert a binary number here">
+                    <input type="button" id="showe" value="Result">
                </div>
-          </div>
-          
-          <hr color="#3D3D3D">
 
-          <div class="code">
-               <input type="text" value="border-radius: 0% 0% 0% 0%;" class="textCode" readonly>
-               <input type="button" value="COPY" class="copyCode">
-          </div>
-     </div>
-     <script src="js/functions.js"></script>
+               <div id="result"></div>
+          </section>
+     </main>
+
+     <script src="js/actions.js"></script>
 </body>
 </html>
